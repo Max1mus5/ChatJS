@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #app {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #message-container {
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .message.incoming {
+    justify-content: flex-start;
+  }
+  
+  .message.outgoing {
+    justify-content: flex-end;
+  }
+  
+  .message-content {
+    background-color: #007AFF;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  #input-container {
+    display: flex;
+  }
+  
+  #message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #send-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007AFF;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
