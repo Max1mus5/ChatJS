@@ -1,58 +1,87 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #F2F2F2;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #app {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  #message-container {
-    margin-bottom: 20px;
-  }
-  
-  .message {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  .message.incoming {
-    justify-content: flex-start;
-  }
-  
-  .message.outgoing {
-    justify-content: flex-end;
-  }
-  
-  .message-content {
-    background-color: #007AFF;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  
-  #input-container {
-    display: flex;
-  }
-  
-  #message-input {
-    flex-grow: 1;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  #send-button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: #007AFF;
-    color: white;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
+/* Chat container */
+.chat-container {
+  max-width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Message container */
+.message-container {
+  padding: 10px;
+  background-color: #f5f5f5;
+  min-height: 200px;
+  overflow-y: scroll;
+}
+
+/* Individual message */
+.message {
+  background-color: #e5f4ff;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Outgoing message */
+.outgoing {
+  align-self: flex-end;
+}
+
+/* Incoming message */
+.incoming {
+  align-self: flex-start;
+}
+
+/* Message content */
+.message-content {
+  display: inline-block;
+  max-width: 80%;
+}
+
+/* Input container */
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+/* Message input */
+.message-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* Send button */
+.send-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4C77D4;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Scrollbar styles for the message container */
+.message-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-container::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.message-container::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
